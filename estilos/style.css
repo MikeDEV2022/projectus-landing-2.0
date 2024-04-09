@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500&family=Share+Tech+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-01: #1B1B1B;
+    --cor-02: #01DEBE;
+    --cor-03: #124217;
+    --cor-04: #F9F9F9;
+    --cor-05: #f9f9f9fd;
+    --font-tec: "Share Tech Mono", monospace;
+    --font-user: "Roboto", sans-serif;
+}
+body{
+    background-color: var(--cor-04);
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #1B1B1B, #000000);
+}
+.container-top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.container-top-header h1{
+    color: var(--cor-05);
+    font-family: var(--font-tec);
+    font-size: 32px;
+}
+.container-top-header h1 > span{
+    color: var(--cor-02);
+    text-shadow: 0px 0px 2px var(--cor-02);
+}
+.container-top-header i{
+    font-size: 26px;
+    color: var(--cor-04);
+    cursor: pointer;
+}
+#button{
+    display: block;
+    margin: auto;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: var(--cor-04);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #01DEBE;
+    width: 60%;
+}
+#button:hover{
+    background-color: rgba(0, 0, 0, 0.192);
+}
+.content-introduction{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.text-span{
+    color: var(--cor-02);
+    font-weight: bold;
+}
+.text-introduction{
+    padding: 10px;
+}
+.text-introduction h1{
+    font-family: var(--font-user);
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--cor-02);
+}
+.text-introduction p{
+    margin: 25px 0px;
+    font-family: var(--font-user);
+    font-size: 15px;
+    color: var(--cor-04);
+    line-height: 20px;
+}
+.content-introduction h1, .content-introduction p{
+    text-align: center;
+}
+.image-introduction{
+    width: 87vw;
+}
+.image-introduction img{
+    display: block;
+    margin: auto;
+    width: 250px;
+}
+.about{
+    background-color: var(--cor-04);
+    height: 850pxpx;
+    font-family: var(--font-user);
+}
+main{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 25px;
+}
+main > h1{
+    text-align: center;
+    font-size: 28px;
+    color: var(--cor-01);
+    padding: 10px 0px;
+}
+main > p{
+    padding: 15px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.349);
+}
+main p > i{
+    color: var(--cor-03);
+    padding-right: 5px;
+}
+.about img{
+    align-self: center;
+    width: 250px;
+}
+.prices{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-image: linear-gradient(to top, #1B1B1B, #000000);
+    height: 900px;
+    padding: 20px;
+}
+.prices h1, .prices p{
+    font-family: var(--font-user);
+    color: var(--cor-02);
+}
+.top-prices h1, .top-prices p{
+    text-align: center;
+    padding: 10px;
+}
+.top-prices p{
+    color: var(--cor-04);
+}
+.prices img{
+    width: 70px;
+}
+.card-price{
+    display: flex;
+    flex-flow: column;
+    width: 50vw;
+    height: 30vh;
+    padding: 10px;
+    border: 1px solid var(--cor-02);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #01debd9f;
+    cursor: pointer;
+    transition: .5s;
+}
+.card-price:hover{
+    box-shadow: 0px 0px 11px #01debd9f;
+    transition: .5s;
+}
+.card-price img{
+    display: block;
+    margin: auto;
+}
+.container-prices{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+.prices-card{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+}
+footer p{
+    font-size: 20px;
+    font-family: var(--font-user);
+    font-weight: bold;
+    color: var(--cor-01);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.479);
+    width: 96vw;
+    padding-top: 10px;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+footer nav a{
+    font-family: var(--font-user);
+    text-decoration: none;
+    color: var(--cor-01);
+    font-size: 17px;
+    font-weight: bold;
+}
