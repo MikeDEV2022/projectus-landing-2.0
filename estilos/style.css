@@ -17,7 +17,6 @@ body{
     background-color: var(--cor-04);
 }
 header{
-    height: 570px;
     background-image: linear-gradient(to bottom, #9510a1, #530d81);
 }
 .container-top-header{
@@ -99,7 +98,6 @@ header{
 }
 .about{
     background-color: var(--cor-04);
-    height: 850pxpx;
     font-family: var(--font-user);
 }
 main{
@@ -133,9 +131,8 @@ main p > i{
     display: flex;
     flex-flow: column;
     justify-content: center;
+    padding-bottom: 50px;
     background-image: linear-gradient(to bottom, #9510a1, #530d81);
-    height: 900px;
-    padding: 20px;
 }
 .prices h1, .prices p{
     font-family: var(--font-user);
