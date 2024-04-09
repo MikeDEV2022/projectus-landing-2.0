@@ -64,6 +64,7 @@ header{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .text-span{
     color: var(--cor-02);
