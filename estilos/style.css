@@ -150,8 +150,8 @@ main p > i{
 .card-price{
     display: flex;
     flex-flow: column;
-    width: 50vw;
-    height: 30vh;
+    width: 250px;
+    height: 200px;
     padding: 10px;
     border: 1px solid var(--cor-02);
     border-radius: 10px;
@@ -180,9 +180,15 @@ main p > i{
     align-items: center;
     margin: 10px 0px;
 }
+.services h1, .services p{
+    color: var(--cor-04);
+}
 .prices-card{
     display: flex;
     justify-content: space-between;
+}
+.prices-card h1, .prices-card p{
+    color: var(--cor-04);
 }
 footer{
     display: flex;
@@ -199,7 +205,7 @@ footer p{
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.479);
     width: 96vw;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 footer nav{
     display: flex;
