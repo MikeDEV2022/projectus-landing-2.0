@@ -17,7 +17,7 @@ body{
     background-color: var(--cor-04);
 }
 header{
-    height: 100vh;
+    height: 570px;
     background-image: linear-gradient(to bottom, #9510a1, #530d81);
 }
 .container-top-header{
