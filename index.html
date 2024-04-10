@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="estilos/media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
-<body>
-    <header>
+<body id="scrolling" style="overflow-y: scroll;">
+    <header id="intro">
         <div class="container-top-header">
             <h1>Secure<span>Labs</span></h1>
             <div class="menu">
@@ -22,10 +22,10 @@
                     <i class="fa-solid fa-bars fa-menu" onclick="menu()"></i>
                 </div>
                 <i id="home" class="fa-solid fa-house-chimney"></i>
-                <a href="#">Sobre nos</a>
-                <a href="#">Contato</a>
-                <a href="#">Valores</a>
-                <a href="#">Explorar</a>
+                <a onclick="menu()" href="#intro">Inicio</a>
+                <a onclick="menu()" href="#sobre">Sobre</a>
+                <a onclick="menu()" href="#preços">Valores</a>
+                <a onclick="menu()" href="#intro">Explorar</a>
             </nav>
         </div>
         <div class="content-introduction">
@@ -39,7 +39,7 @@
             </div>
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="sobre">
         <main>
             <h1>Sobre nossos serviços e suas vantagens</h1>
             <p><i class="fa-solid fa-circle-check"></i>Temos servidores dedicados 24h por dia fazendo checagens no sistema, nossos profissionais de ti são 100% preparados para todo tipo de emergencia de segurança do seu sistema</p>
@@ -49,7 +49,7 @@
         </main>
     </section>
     <section class="prices">
-        <div class="top-prices">
+        <div class="top-prices" id="preços">
             <h1>Conheça os nossos servições e suas vantagens do mercado</h1>
             <p>Dentre as nossas variedades de serviços encontram-se nos seguintes valores</p>
         </div>
@@ -103,6 +103,11 @@
                 burguer.style.display = 'none'
             }else{
                 burguer.style.display = 'flex'
+            }
+            if(burguer.style.display == 'flex'){
+                scrolling.style.overflowY = 'hidden'
+            }else{
+                scrolling.style.overflowY = 'scroll'
             }
         }
     </script>
