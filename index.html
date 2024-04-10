@@ -18,7 +18,10 @@
         </div>
         <div class="container-secret-menu" id="burguer" style="display: none;">
             <nav>
-                <i class="fa-solid fa-house-chimney"></i>
+                <div class="menu-burguer-in-secret">
+                    <i class="fa-solid fa-bars fa-menu" onclick="menu()"></i>
+                </div>
+                <i id="home" class="fa-solid fa-house-chimney"></i>
                 <a href="#">Sobre nos</a>
                 <a href="#">Contato</a>
                 <a href="#">Valores</a>
@@ -92,13 +95,12 @@
             <a href="#">Politicas</a>
             <a href="#">Contratos</a>
         </nav>
-        <p>&copy; Desenvoldido por Mike</p>
+        <p>&copy; Desenvolvido por Mike</p>
     </footer>
     <script>
         function menu(){
             if(burguer.style.display == 'flex'){
                 burguer.style.display = 'none'
-                scroling.style.overflow = 'hidden'
             }else{
                 burguer.style.display = 'flex'
             }
