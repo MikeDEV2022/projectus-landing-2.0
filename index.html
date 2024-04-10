@@ -12,15 +12,18 @@
     <header>
         <div class="container-top-header">
             <h1>Secure<span>Labs</span></h1>
-            <nav style="display: none;">
+            <div class="menu">
+                <i class="fa-solid fa-bars" onclick="menu()"></i>
+            </div>
+        </div>
+        <div class="container-secret-menu" id="burguer" style="display: none;">
+            <nav>
+                <i class="fa-solid fa-house-chimney"></i>
                 <a href="#">Sobre nos</a>
                 <a href="#">Contato</a>
                 <a href="#">Valores</a>
                 <a href="#">Explorar</a>
             </nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         </div>
         <div class="content-introduction">
             <div class="text-introduction">
@@ -91,5 +94,15 @@
         </nav>
         <p>&copy; Desenvoldido por Mike</p>
     </footer>
+    <script>
+        function menu(){
+            if(burguer.style.display == 'flex'){
+                burguer.style.display = 'none'
+                scroling.style.overflow = 'hidden'
+            }else{
+                burguer.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>

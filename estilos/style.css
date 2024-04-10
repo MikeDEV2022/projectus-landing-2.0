@@ -26,6 +26,31 @@ header{
     padding: 15px;
     margin-bottom: 20px;
 }
+.container-secret-menu nav{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 100%;
+    height: 100vh;
+}
+.container-secret-menu nav a{
+    font-family: var(--font-user);
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--cor-04);
+}
+.container-secret-menu nav i{
+    font-size: 50px;
+    color: var(--cor-04);
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--cor-04);
+    transition: .5s;
+}
 .container-top-header h1{
     color: var(--cor-05);
     font-family: var(--font-tec);
@@ -94,7 +119,7 @@ header{
 .image-introduction img{
     display: block;
     margin: auto;
-    width: 250px;
+    width: 50vw;
 }
 .about{
     background-color: var(--cor-04);
@@ -125,7 +150,7 @@ main p > i{
 }
 .about img{
     align-self: center;
-    width: 250px;
+    width: 50vw;
 }
 .prices{
     display: flex;
@@ -205,7 +230,7 @@ footer p{
     color: var(--cor-01);
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.479);
-    width: 96vw;
+    width: 60vw;
     padding-top: 20px;
 }
 footer nav{
