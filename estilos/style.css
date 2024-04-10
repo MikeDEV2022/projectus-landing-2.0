@@ -26,6 +26,9 @@ header{
     padding: 15px;
     margin-bottom: 20px;
 }
+.menu-secret-top-header{
+    display: none;
+}
 .container-secret-menu nav{
     display: flex;
     flex-flow: column;
@@ -154,7 +157,7 @@ main > h1{
     color: var(--cor-02);
     padding: 10px 0px;
 }
-main > p{
+main > .text-about > p{
     color: var(--cor-04);
     padding: 15px 0px;
     border-bottom: 1px solid #01debd8f;
